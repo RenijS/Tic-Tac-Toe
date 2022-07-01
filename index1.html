@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <script
+      src="https://kit.fontawesome.com/e7eebb3538.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1>Tic Tac Toe</h1>
+      <section class="scoreBoard">
+        <div class="player1">
+          <i class="fa-solid fa-xmark"></i>
+          <span id="player1Name">Player 1: </span>
+          <span class="Score">0</span>
+        </div>
+        <div class="player2 active">
+          <i class="fa-regular fa-circle"></i>
+          <span id="player2Name">Player 2: </span>
+          <span class="Score">0</span>
+        </div>
+      </section>
+      <section class="gameBoard">
+        <div class="option" id="0" data-columns="0" data-rows="0"></div>
+        <div class="option" id="1" data-columns="1" data-rows="0"></div>
+        <div class="option" id="2" data-columns="2" data-rows="0"></div>
+        <div class="option" id="3" data-columns="0" data-rows="1"></div>
+        <div class="option" id="4" data-columns="1" data-rows="1"></div>
+        <div class="option" id="5" data-columns="2" data-rows="1"></div>
+        <div class="option" id="6" data-columns="0" data-rows="2"></div>
+        <div class="option" id="7" data-columns="1" data-rows="2"></div>
+        <div class="option" id="8" data-columns="2" data-rows="2"></div>
+      </section>
+    </section>
+    <dialog class="modal" id="modal">
+      <h3>We have got a Winner</h3>
+      <h4 id="winnerName"></h4>
+      <button class="againBtn">Play Again</button>
+      <button class="cancelBtn">Cancel</button>
+    </dialog>
+    <!--JS-->
+    <script src="./app1.js"></script>
+  </body>
+</html>
