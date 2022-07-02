@@ -18,14 +18,20 @@
         <div class="player1">
           <i class="fa-solid fa-xmark"></i>
           <span id="player1Name">Player 1: </span>
-          <span class="Score">0</span>
+          <span class="p1Score">0</span>
         </div>
         <div class="player2 active">
           <i class="fa-regular fa-circle"></i>
           <span id="player2Name">Player 2: </span>
-          <span class="Score">0</span>
+          <span class="p2Score">0</span>
         </div>
       </section>
+      <div
+        class="message invisible"
+        style="font-size: larger; margin-bottom: 1rem"
+      >
+        Message
+      </div>
       <section class="gameBoard">
         <div class="option" id="0" data-columns="0" data-rows="0"></div>
         <div class="option" id="1" data-columns="1" data-rows="0"></div>
@@ -37,9 +43,13 @@
         <div class="option" id="7" data-columns="1" data-rows="2"></div>
         <div class="option" id="8" data-columns="2" data-rows="2"></div>
       </section>
+      <div class="optionSection">
+        <button class="restartBtn">Restart</button>
+        <button onclick="toMainMenu()">Main Menu</button>
+      </div>
     </section>
     <dialog class="modal" id="modal">
-      <h3>We have got a Winner</h3>
+      <h3 class="resultText">We have got a Winner</h3>
       <h4 id="winnerName"></h4>
       <button class="againBtn">Play Again</button>
       <button class="cancelBtn">Cancel</button>

@@ -4,7 +4,7 @@ const startBtn = document.querySelector(".startBtn");
 const cancelBtn = document.querySelector(".cancelBtn");
 
 function handleStart() {
-  window.location.href = "./index1.html";
+  window.location.replace("./index1.html");
   const p1Name = document.querySelector("#player1Name").value;
   const p2Name = document.querySelector("#player2Name").value;
 
